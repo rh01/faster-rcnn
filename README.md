@@ -1,3 +1,29 @@
+## 2019-08-01
+经过很多次修改，这个版本在2019-08可用，适应的环境为cuda8.0+cudnn3，Matlab2017b环境，每张图片的处理时间与实验结果与论文描述均一致，在此Mark。
+
+注意：
+
+- 最好使用cuda8及以上版本，因为对于不同的GPU，他的计算能力会受到限制，这里使用的GTX1080Ti
+- 经过测试cudnn4无法正常使用，若按照这个仓库原作者的README和caffe所用的分支，需要使用cudnn3，测试在cuda7和cuda8下正常运行
+- 这个仓库在原作者的基础上更改了一些代码，若想知晓更改了哪些文件，请查看的commit log #a763565
+- 添加了requirements.txt
+- python2.7
+
+```bash
+pip install -r requirements.txt
+```
+
+## 声明
+本仓库fork自 https://github.com/rbgirshick/fast-rcnn ，并根据自己的环境做了一些修改。
+
+    @inproceedings{renNIPS15fasterrcnn,
+        Author = {Shaoqing Ren and Kaiming He and Ross Girshick and Jian Sun},
+        Title = {Faster {R-CNN}: Towards Real-Time Object Detection
+                 with Region Proposal Networks},
+        Booktitle = {Advances in Neural Information Processing Systems ({NIPS})},
+        Year = {2015}
+    }
+
 # py-faster-rcnn has been deprecated. Please see [Detectron](https://github.com/facebookresearch/Detectron), which includes an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870).
 
 ### Disclaimer
